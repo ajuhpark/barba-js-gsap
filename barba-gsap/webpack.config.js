@@ -75,10 +75,10 @@ module.exports = (env, argv) => ({
     }),
   ],
   devServer: {
-    contentBase: [
+    static: [
       path.join(__dirname, '/src'),
     ],
-    watchContentBase: true,
+    // watchContentBase: true,
     compress: true,
     port: 9000,
     open: true,
